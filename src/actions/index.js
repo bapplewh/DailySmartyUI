@@ -9,7 +9,7 @@ export function fetchRecentPosts() {
                 dispatch({
                     type: SET_RECENT_POSTS,
                     payload: response.data.posts
-                });
+                })
             })
     }
 }
