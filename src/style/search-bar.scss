@@ -16,9 +16,6 @@
 
             transition: all .2s ease;
 
-            height: 118px;
-            font-size: 38px;
-
             &::placeholder {
                 color: $litegrey;
                 // font-family: 'Font Awesome\ 5 Free', 'Lato', Arial, Helvetica, sans-serif;
@@ -42,19 +39,15 @@
 .search-bar__home {
     align-content: center;
     justify-items: center;
-    
+
     input {
         height: 118px;
         font-size: 40px;
-        // @media screen and (max-width: 600px) {
-        //     font-size: 23px;
-        //     height: 59px;
-        // } 
     }
 }
 
 .search-bar__results {
-    align-content: start;
+    align-content: flex-start;
     justify-items: center;
 
     input {
