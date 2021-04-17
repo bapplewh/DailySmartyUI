@@ -3,12 +3,12 @@ import { Field, reduxForm } from "redux-form";
 import { withRouter } from "react-router-dom";
 
 class SearchBar extends Component {
-    handleFormSubmit = function(query) {
+    handleFormSubmit = function({query}) {
         this.props.onSubmit(query);
     }
 
     renderInput(field) {
-        return <input type="text" placeholder="Search Daily Smarty" {...field.input} />
+        return <input type="text" placeholder="Search DailySmarty" {...field.input} />
     }
 
     render() {
@@ -16,7 +16,9 @@ class SearchBar extends Component {
 
         return (
             <form className="search-bar" onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
-                <Field name="query" component={this.renderInput} />
+                <div className="search-bar__wrapper">
+                    <Field name="query" component={this.renderInput} />
+                </div>
             </form>
         );
     }
