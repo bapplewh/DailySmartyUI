@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Field, reduxForm } from "redux-form";
 import { withRouter } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class SearchBar extends Component {
     handleFormSubmit = function({query}) {
@@ -8,7 +9,7 @@ class SearchBar extends Component {
     }
 
     renderInput(field) {
-        return <input type="text" placeholder="Search DailySmarty" {...field.input} />
+        return <input type="text" placeholder="&#xF002; Search DailySmarty" {...field.input} />
     }
 
     render() {

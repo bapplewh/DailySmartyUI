@@ -6,6 +6,12 @@ import Logo from "./logo";
 import SearchBar from "./search-bar";
 import RecentPosts from "./recent-posts";
 
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FortAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+
+library.add(faSearch);
+
 class Home extends Component {
   handleSearchBarSubmit(query) {
     this.props.fetchPostsWithQuery(query, () => {
