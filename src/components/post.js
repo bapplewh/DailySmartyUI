@@ -42,6 +42,10 @@ class Post extends Component {
             link = link.substring(0, link.length - 4);
         }
 
+        if (link.includes(".org")) {
+            link = link.substring(0, link.length - 4);
+        }
+
         return link;
     }
 
@@ -57,6 +61,10 @@ class Post extends Component {
                 </div>
             )
         })
+
+        if (links == 0) {
+            return <div className="no-content">No post links</div>
+        }
 
         return links;
     }

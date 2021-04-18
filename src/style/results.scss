@@ -47,7 +47,8 @@
     }
 
     .result-post__links {
-        // display: flex;
+        display: flex;
+        height: 80px;
 
     }
 }
@@ -55,6 +56,8 @@
 .post-link {
     display: flex;
     min-height: 70px;
+    flex-basis: 205px;
+    margin-right: 37px;
 
     .post-link__box {
         min-width: 70px;
